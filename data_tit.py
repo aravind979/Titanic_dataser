@@ -78,7 +78,7 @@ s_data =  tick_det.loc[(tick_det.Ticket == ticket)]
 st.table(s_data.iloc[:,1:])
 
 
-st.subheader("Check SUrvived or Not")
+st.subheader("Check Survived or Not")
 st.markdown("Use the ticket number to get the passenger id of the person you searching from above box")
 pass_id = st.selectbox("Select id ",data_set.PassengerId)
 if data_set.Survived[pass_id-1] == 1:
